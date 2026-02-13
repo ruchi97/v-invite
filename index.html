@@ -25,9 +25,24 @@
         <div id="tease-toast"></div>
     </div>
 
-    <audio id="bg-music" loop autoplay muted>
+    <button onclick="document.getElementById('bgmusic').style.display='block'">
+      Play Music
+    </button>
+    
+    <iframe 
+      id="bgmusic"
+      width="0" 
+      height="0" 
+      scrolling="no" 
+      frameborder="no" 
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A152901279&auto_play=true">
+    </iframe>
+
+
+    <!-- <audio id="bg-music" loop autoplay muted>
         <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
     <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
 
